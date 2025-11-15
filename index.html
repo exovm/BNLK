@@ -6,28 +6,9 @@
   <meta http-equiv="refresh" content="3600">
   <style>
     body {
-      background-image: url('reposted.jpg'); /* background image */
-      background-size: cover;               /* cover entire viewport */
-      background-position: center;          /* center the image */
-      background-repeat: no-repeat;         /* don't repeat */
-      background-attachment: fixed;         /* fixed on scroll */
+      background-color: #3b3b3b;
       font-family: sans-serif;
       color: white;
-      margin: 0;
-      padding: 0;
-      position: relative;
-    }
-
-    /* dark overlay for readability */
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.5);
-      z-index: -1;
     }
 
     #container {
@@ -144,12 +125,15 @@
     <div id="header_ransom">
       <p class="ophello">#RatlineSecured.</p>
       <p class="ophello">Your files are encrypted.</p>
+
       <p class="information">  
-        To get the key to decrypt files, you have to pay <span class="red">5.9 million USD.</span>
-        if payment is not made<br> by <span class="red">tomorrow night</span> we'll brick your entire system.<br><br>
-        More instructions forthcoming. - Ratline.
+        To receive the decryption key, contact  
+        <span class="red">paymentratline@gmail.com</span>.<br><br>
+        Email us for further instructions. – Ratline.
       </p>
+
       <p id="timer"></p>
+
       <div class="more_information">
         <p class="minfo" style="width:12%"></p>
         <p class="minfo" style="width:15%">Your system: <span class="red">(x64)</span></p>
@@ -162,7 +146,7 @@
 
     <div id="menu_ransom">
       <a href="#"><button class="button">Refresh</button></a>
-      <button onclick="alert('Please send payment instructions to: support@ratline.com')" class="button red">Payment</button>
+      <button onclick="alert('Email paymentratline@gmail.com for payment steps.')" class="button red">Payment</button>
       <button onclick="alert('For questions about your files, contact: help@ratline.com')" class="button">FAQ</button>
       <button onclick="alert('Decrypt your first file for FREE by contacting: free@ratline.com')" class="button red">Decrypt first file for FREE</button>
       <button onclick="alert('You can contact us on: support@ratline.com')" class="button">Support</button>
@@ -172,19 +156,18 @@
 
     <div class="diclaimer">
       RATLINE ✪ ΔCTUAL³³º¹ <br><br>
-      Balance in chaos is strength.<br>
-      Act wisely, move decisively.
+      There's an unequal amount of good and bad in most things.<br>
+      The trick is to figure out the ratio and act accordingly.
     </div>
   </div>
 
   <script>
-    // Countdown: 24 hours from page load
     var countdownDuration = 24 * 60 * 60; 
     var endTime = new Date().getTime() + countdownDuration * 1000;
 
     var x = setInterval(function() {
       var now = new Date().getTime();
-      var diff = Math.max((endTime - now) / 1000, 0); // seconds left
+      var diff = Math.max((endTime - now) / 1000, 0);
 
       var hours = Math.floor(diff / 3600);
       var minutes = Math.floor((diff % 3600) / 60);
