@@ -6,9 +6,28 @@
   <meta http-equiv="refresh" content="3600">
   <style>
     body {
-      background-color: #3b3b3b; /* dark grey background */
+      background-image: url('reposted.jpg'); /* background image */
+      background-size: cover;               /* cover entire viewport */
+      background-position: center;          /* center the image */
+      background-repeat: no-repeat;         /* don't repeat */
+      background-attachment: fixed;         /* fixed on scroll */
       font-family: sans-serif;
       color: white;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    /* dark overlay for readability */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: -1;
     }
 
     #container {
@@ -26,7 +45,7 @@
       margin-left: auto;
       margin-right: auto;
       min-height: 100px;
-      background-color: #555555; /* lighter grey box */
+      background-color: #555555;
       border-radius: 11px;
       margin-bottom: 15px;
       color: white;
@@ -153,8 +172,8 @@
 
     <div class="diclaimer">
       RATLINE ✪ ΔCTUAL³³º¹ <br><br>
-      There's an unequal amount of good and bad in most things.<br>
-      The trick is to figure out the ratio and act accordingly.
+      Balance in chaos is strength.<br>
+      Act wisely, move decisively.
     </div>
   </div>
 
@@ -184,5 +203,3 @@
   </script>
 </body>
 </html>
-
-
